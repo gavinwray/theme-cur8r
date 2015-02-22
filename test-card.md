@@ -109,7 +109,7 @@ Pork pie | £4.32
 This is a three-column table and the column content alignment is specified:
 
 Product | Price per kg | Tastiness
-:------- | ----: | :---: |
+:------- | ----: | :---:
 Pork loin | £8.99 | 10
 Pork belly | £9.49 | 8
 Pork pie | £4.32 | 5
