@@ -1,3 +1,7 @@
+/* Created by Shawn Adrian https://github.com/postachio/theme-cur8r
+   Modified by Gavin Wray 22 Feb 2015 https://github.com/gavinwray/theme-cur8r
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
 @import url(http://postach.io/static/themes/_assets/css/typicons.css);
 /*---------------------------------------------------
@@ -44,7 +48,7 @@ h4 {
   padding: 0;
   border: 0;
   position: relative;
-  color: #000000;
+  color: #222;
   list-style-type: none;
 }
 h1,
@@ -52,11 +56,8 @@ h2 {
   font-size: 1rem;
   line-height: 1rem;
 }
-/*
-h3 { font-size: 3rem; }
-h4 { font-size: 2rem; }
-h5 { font-size: 1rem; }
-*/
+h3 { font-size: 1.777rem; }
+h4 { font-size: 1.333rem; }
 p {
   padding: 0.5rem 0 0.5rem 0;
 }
@@ -281,12 +282,12 @@ ul.tags li {
   display: inline-block;
 }
 ul.tags li a {
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  border-radius: 7px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   font-size: 0.75rem;
-  font-weight: 700;
-  background-color: #b9b9b9;
+  font-weight: 400;
+  background-color: #333;
   color: #ffffff;
   padding: 1px 7px 3px 7px;
 }
@@ -429,8 +430,8 @@ div.post {
   padding: 70px;
 }
 div.post h2 {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 2.369rem;
+  line-height: 1.2;
 }
 div.post h2 a {
   color: #464748;
@@ -445,7 +446,7 @@ div.post ul.tags:first-of-type {
   margin-left: 0;
 }
 div.post div.post-body p {
-  color: #464748;
+  color: #222;
 }
 div.post div.post-body p img {
   width: 100%;
@@ -502,17 +503,36 @@ div.post div.post-body .post-content div.gist .line {
   margin: 0;
 }
 div.post div.post-body .post-content table {
-  margin: 0;
+  margin: 0.5rem 0;
   padding: 0;
+  background-color: #f4f3e9;
+}
+div.post div.post-body .post-content thead,
+div.post div.post-body .post-content tr:nth-child(even) {
+  background-color: #e7e2d0;
+  margin: 0;
+}
+div.post div.post-body .post-content th, 
+div.post div.post-body .post-content td {
+  padding: 0.25rem 0.5rem;
 }
 div.post div.post-body .post-content blockquote {
-  padding: 7.5px 15px;
+  padding: 7.5px 60px 7.5px 15px;
   margin: 7.5px 0;
   border-left: 5px solid #e5e5e5;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+div.post div.post-body .post-content pre {
+  padding: 7.5px 60px 7.5px 15px;
+  margin: 7.5px 0;
+  background-color: #f4f3e9;
+  border: 1px solid #e7e2d0;
+  border-left: 5px solid #e7e2d0;
 }
 div.post div.post-body .post-content ul {
   padding: 7.5px 0 11.25px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 div.post div.post-body .post-content ul li {
   padding: 0;
@@ -521,7 +541,7 @@ div.post div.post-body .post-content ul li {
 }
 div.post div.post-body .post-content ol {
   padding: 7.5px 0 11.25px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 div.post div.post-body .post-content ol li {
   padding: 0;
@@ -532,12 +552,12 @@ div.post div.post-body .post-content h1 {
   padding-bottom: 15px;
 }
 div.post div.post-body .post-content h2,
-div.post div.post-body .post-content h3 {
+div.post div.post-body .post-content h3,
+div.post div.post-body .post-content h4 {
   padding-top: 15px;
 }
 div.post div.post-body .post-content img {
   max-width: 100%;
-  height: auto;
 }
 div.post div.post-body .post-content .mejs-container {
   margin-top: 7.5px;
