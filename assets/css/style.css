@@ -507,6 +507,7 @@ div.post div.post-body .post-content table {
   margin: 0.5rem 0;
   padding: 0;
   background-color: #f4f3e9;
+  font-size: 0.9rem;
 }
 div.post div.post-body .post-content thead,
 div.post div.post-body .post-content tr:nth-child(even) {
@@ -530,6 +531,7 @@ div.post div.post-body .post-content pre {
   background-color: #f4f3e9;
   border: 1px solid #e7e2d0;
   border-left: 5px solid #e7e2d0;
+  font-size: 0.8rem;
 }
 div.post div.post-body .post-content ul {
   padding: 7.5px 0 11.25px;
