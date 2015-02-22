@@ -426,7 +426,9 @@ div.post-wrapper div.post-fragment:hover div.post-body {
 }
 div.post {
   background-color: #ffffff;
-  padding: 70px;
+  padding: 50px 100px 50px 50px;
+  max-width: 630px;
+  margin: auto;
 }
 div.post h2 {
   font-size: 2.369rem;
