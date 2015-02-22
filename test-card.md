@@ -59,9 +59,9 @@ This is an ordered list:
 
 And this is an unordered list:
 
-1. Ut beef ball tip turkey tempor, flank t-bone ullamco biltong short ribs boudin leberkas laborum short loin minim.
-2. Nulla sint nisi magna t-bone tail non pariatur meatloaf ullamco jerky.
-3. Alcatra biltong ut ground round esse excepteur occaecat pork loin tenderloin brisket tri-tip bacon fatback filet mignon.
+* Ut beef ball tip turkey tempor, flank t-bone ullamco biltong short ribs boudin leberkas laborum short loin minim.
+* Nulla sint nisi magna t-bone tail non pariatur meatloaf ullamco jerky.
+* Alcatra biltong ut ground round esse excepteur occaecat pork loin tenderloin brisket tri-tip bacon fatback filet mignon.
 
 So there you go.
 
