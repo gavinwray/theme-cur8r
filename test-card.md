@@ -1,10 +1,22 @@
 This is a **Markdown document** I made to test themes for use with [Postach.io](http://postach.io), the blogging platform powered by [Evernote](http://evernote.com). This document contains *dummy text* and sample post embeds from popular sites such as [Twitter](https://twitter.com), [YouTube](https://youtube.com), [SoundCloud](http://soundcloud.com) and [GitHub](https://github.com).
 
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
 ## This is a heading 2
 
 Bacon ipsum dolor amet commodo minim leberkas, ut filet mignon dolore culpa shoulder alcatra magna venison in cupim chicken. Nostrud ut ball tip, id incididunt flank bacon occaecat picanha dolor chuck shankle biltong. Nulla cupim leberkas biltong, in meatloaf irure cillum. Mollit adipisicing filet mignon, aliqua anim cupim doner qui swine short ribs tempor magna meatball.
 
 Laborum lorem shank quis voluptate nisi velit dolor laboris commodo. Ham hock chuck voluptate cillum consectetur. Alcatra cillum lorem eu esse.
+
+Bacon ipsum dolor amet commodo minim leberkas, ut filet mignon dolore culpa shoulder alcatra magna venison in cupim chicken.
+
+Bacon ipsum dolor amet commodo minim leberkas, ut filet mignon dolore culpa shoulder alcatra magna venison in cupim chicken. Nostrud ut ball tip, id incididunt flank bacon occaecat picanha dolor chuck shankle biltong. Nulla cupim leberkas biltong, in meatloaf irure cillum. Mollit adipisicing filet mignon, aliqua anim cupim doner qui swine short ribs tempor magna meatball.
+
+Ut filet mignon dolore culpa shoulder alcatra magna venison in cupim chicken. Nostrud ut ball tip, id incididunt flank bacon occaecat picanha dolor chuck shankle biltong. Nulla cupim leberkas biltong, in meatloaf irure cillum. Mollit adipisicing filet mignon, aliqua anim cupim doner qui swine short ribs tempor magna meatball.
 
 ## This is a heading 2
 
@@ -62,6 +74,18 @@ This is a blockquote containing multiple paragraphs:
 
 > _[http://baconipsum.com](http://baconipsum.com/)_
 
+## Images
+
+Nostrud ut ball tip, id incididunt flank bacon occaecat picanha dolor chuck shankle biltong. Nulla cupim leberkas biltong, in meatloaf irure cillum. Let's try adding an image of the Shakespeare Memorial Room at the Library of Birmingham using the following Markdown:
+
+```
+![Shakespeare Memorial Room at the Library of Birmingham](https://farm8.staticflickr.com/7367/11012639363_6c6b247c2a.jpg)
+```
+
+![Shakespeare Memorial Room at the Library of Birmingham](https://farm8.staticflickr.com/7367/11012639363_6c6b247c2a.jpg)
+
+
+
 ## Tables
 
 This is a two-column table:
@@ -82,7 +106,7 @@ Pork pie | £4.32 | 5
 
 ## Code
 
-Here is some `<inline code>` within a paragraph. Below is a code block:
+Here is some `inline code` within a paragraph. Below is a code block:
 
 ```
 // This fixes everything
@@ -100,7 +124,7 @@ var fix = 1;
 [soundcloud url="https://soundcloud.com/rhinoranters/needlework"]
 
 ## Embed YouTube
-[youtube url="https://www.youtube.com/watch?v=iyTTX6Wlf1Y"]
+[youtube url="https://www.youtube.com/watch?v=iyTTX6Wlf1Y" width="100%"]
 
 ## Embed flickr photo
 [flickr url="https://www.flickr.com/photos/gavinwray/8913064337/"]
