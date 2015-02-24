@@ -67,7 +67,7 @@
       <div class="post-wrapper">
 
         {% if is_tag %}
-        <h4 class="tag-header">Showing all posts tagged as {{ tag }}:</h4>
+        <h4 class="tag-header">All posts in &lsquo;{{ tag }}&rsquo;</h4>
         {% endif %}
 
         {% for post in posts %}
@@ -127,8 +127,8 @@
 
       {% if not is_tag and posts|length >= 9 %}
       <div class="pagination">
-        {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&laquo; Prev</a>{% endif %}
-        {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">Next &raquo;</a>{% endif %}
+        {% if pagination.prev %}<a href="{{ pagination.prev }}" class="post-prev">&laquo; Previous page</a>{% endif %}
+        {% if pagination.next %}<a href="{{ pagination.next }}" class="post-next">Next page &raquo;</a>{% endif %}
       </div>
       {% endif %}
 
@@ -140,6 +140,8 @@
 
           <h2>{{ post.title }}</h2>
 
+		  <p class="date"><span class="typcn typcn-calender"></span> {{ post.created_at|format_date('%d %b %Y') }}</p>
+		  
           <div class="post-body">
             <div class="post-content" data-type-cleanup="true">
               {{ post.content }}
@@ -162,9 +164,9 @@
             <div class="info-left">
               {{ theme.social.bar }}
             </div>
-            <div class="info-right">
+            <!-- <div class="info-right">
               <p class="date"><span class="typcn typcn-calender"></span> {{ post.created_at|format_date('%d %b %Y') }}</p>
-            </div>
+            </div> -->
           </div>
 
           {% if site.disqus %}
