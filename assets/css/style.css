@@ -424,6 +424,13 @@ div.post-wrapper div.post-fragment:hover div.post-body {
   display: block;
   cursor: pointer;
 }
+div.post-wrapper div.post-fragment p.date {
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 div.post {
   background-color: #ffffff;
   padding: 50px 100px 50px 50px;
@@ -952,5 +959,3 @@ div.pagination:after {
   line-height: 10pt;
   padding: 7px;
 }
-
-/* Add new thing to force Postach.io to use this theme again */
