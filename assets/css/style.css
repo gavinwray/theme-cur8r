@@ -850,6 +850,9 @@ div.pagination:after {
   div.pagination {
     padding-left: 25px;
   }
+  h4.tag-header {
+    padding-left: 15px;
+  }
 }
 .post-pdf {
   position: relative;
