@@ -1,5 +1,5 @@
 /* Created by Shawn Adrian https://github.com/postachio/theme-cur8r
-   Modified by Gavin Wray 22 Feb 2015 https://github.com/gavinwray/theme-cur8r
+   Modified by Gavin Wray 24 Feb 2015 https://github.com/gavinwray/theme-cur8r
 */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
@@ -796,7 +796,6 @@ div.pagination:after {
   div.post-wrapper {
     width: 100%;
     padding: 45px 0 0 0;
-    border-bottom: 1px solid #464748;
   }
   div.post-wrapper div.post-fragment {
     clear: both;
