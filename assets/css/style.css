@@ -823,11 +823,9 @@ div.pagination:after {
     font-size: 1rem;
     line-height: 1.2;
   }
-  div.post div.post-body .post-content ol {
-    margin-left: 30px;
-  }
+  div.post div.post-body .post-content ol,
   div.post div.post-body .post-content ul {
-    margin-left: 25px;
+    margin-left: 30px;
   }
   div.post div.post-body .post-content blockquote {
     padding-right: 0px;
