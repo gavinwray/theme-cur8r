@@ -523,7 +523,6 @@ div.post div.post-body .post-content blockquote {
   margin: 7.5px 0;
   border-left: 5px solid #e5e5e5;
   font-size: 0.875rem;
-  line-height: 1.6;
 }
 div.post div.post-body .post-content pre {
   padding: 7.5px 60px 7.5px 15px;
@@ -699,7 +698,6 @@ div.pagination:after {
   height: 0;
 }
 /* Large desktop */
-/* Large desktop */
 @media (max-width: 1229px) {
   div.post-wrapper div.post-fragment {
     height: 315px;
@@ -734,6 +732,7 @@ div.pagination:after {
   }
   div.post-wrapper {
     width: 100%;
+    padding-top: 100px;
   }
   div.post-wrapper div.post-fragment {
     float: left;
@@ -770,14 +769,27 @@ div.pagination:after {
 }
 /* Landscape phones and down */
 @media (max-width: 560px) {
+  div.header {
+    background-color: #E7E2D0;
+    height: 45px;
+  }
+  div.header h1.logo {
+    padding: 15px 0 0 25px;
+  }
   div.header ul.nav {
     display: none;
   }
   div.mobile-nav {
     display: block;
+    top: -25px;
+  }
+  div.mobile-nav ul {
+    top: 70px;
   }
   div.post-wrapper {
     width: 100%;
+    padding: 30px 0 0 0;
+    border-bottom: 1px solid #464748;
   }
   div.post-wrapper div.post-fragment {
     clear: both;
@@ -793,11 +805,39 @@ div.pagination:after {
     padding: 10px 0 10px 10px;
   }
   div.post {
-    padding: 35px;
+    padding: 25px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 1.45;
   }
   div.post h2 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.563rem;
+    line-height: 1.2;
+  }
+  div.post h3 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+  div.post h4 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  div.post div.post-body .post-content blockquote {
+    padding-right: 0px;
+    font-size: 0.8rem;
+  }
+  div.post tr {
+    font-size: 0.8rem;
+  }
+  div.post pre {
+    font-size: 0.8em !important;
+  }
+  div.post .post-info p.date {
+    font-size: 0.8rem;
+  }
+  div.pagination {
+    padding-left: 25px;
   }
 }
 .post-pdf {
