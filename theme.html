@@ -39,17 +39,14 @@
 
     {% if site.analytics %}
     <script>
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', '{{ site.analytics }}']);
       _gaq.push(['_trackPageview']);
-
       (function() {
         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
     {% endif %}
 </head>
@@ -98,11 +95,11 @@
 
           {% if post.type == 'link' %}
           <div class="post-details">
-            <h2><a href="{{ post.url }}" target="_blank">{{ post.title|truncate(40, False, '...') }}</a></h2>
+            <h2><a href="{{ post.url }}" target="_blank">{{ post.title|truncate(70, False, '...') }}</a></h2>
           </div>
           {% else %}
           <div class="post-details">
-            <h2><a href="{{ post.permalink }}">{{ post.title|truncate(40, False, '...') }}</a></h2>
+            <h2><a href="{{ post.permalink }}">{{ post.title|truncate(70, False, '...') }}</a></h2>
           </div>
           {% endif %}
 
@@ -167,7 +164,7 @@
               {{ theme.social.bar }}
             </div>
             <div class="info-right">
-              <p class="date"><span class="typcn typcn-calender"></span> {{ post.created_at|format_date }}</p>
+              <p class="date"><span class="typcn typcn-calender"></span> {{ post.created_at|format_date('%d.%m.%Y') }}</p>
             </div>
           </div>
 
