@@ -1,13 +1,18 @@
+/*  Created by Shawn Adrian https://github.com/postachio/theme-cur8r
+    Modified by Gavin Wray 27 Feb 2015
+    https://github.com/gavinwray/theme-cur8r
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
 @import url(http://postach.io/static/themes/_assets/css/typicons.css);
 @import url(http://postach.io/static/themes/_assets/less/elements.less);
 
 @black: #000;
 @white: #fff;
-@text: #464748;
+@text: #222;
 @link: #44a084;
 @hover: #ee770d;
-
+@background: #e7e2d0;
 @gutter: 35px;
 
 body {
@@ -16,8 +21,8 @@ body {
     font-family: 'Lato', helvetica, sans-serif;
     height: 100%;
     width: 100%;
-    background-color: #e7e2d0;
-    font-size: 100%; /* 16px */
+    background-color: @background;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -28,17 +33,21 @@ h1, h2, h3, h4 {
     padding: 0;
     border: 0;
     position: relative;
-    color: @black;
+    color: @text;
     list-style-type: none;
 }
 
-h1, h2 { font-size: 1rem; line-height: 1rem; }
-/*
-h3 { font-size: 3rem; }
-h4 { font-size: 2rem; }
+h1, h2 {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+h3 {
+    font-size: 1.777rem;
+}
+h4 { 
+    font-size: 1.333rem;
+}
 h5 { font-size: 1rem; }
-*/
-
 p {
     padding: 0.5rem 0 0.5rem 0;
 }
@@ -229,7 +238,7 @@ div.right {
         padding-bottom: 15px;
         .typcn {
             font-size: 2.5rem;
-            color: #e7e2d0;
+            color: @background;
         }
     }
     h3 {
@@ -271,10 +280,12 @@ ul.tags {
         margin: 0;
         display: inline-block;
         a {
-            .rounded(7px);
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
             font-size: 0.75rem;
-            font-weight: 700;
-            background-color: #b9b9b9;
+            font-weight: 400;
+            background-color: #333;
             color: @white;
             padding: 1px 7px 3px 7px;
             &:hover {
@@ -395,10 +406,12 @@ div.post-wrapper {
 
 div.post {
     background-color: @white;
-    padding: @gutter * 2;
+    padding: 50px 100px 50px 50px;
+    max-width: 630px;
+    margin: auto;
     h2 {
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 2.369rem;
+        line-height: 1.2;
         a {
             color: @text;
             &:hover {
@@ -422,7 +435,41 @@ div.post {
         }
 
         .post-content {
-          .content(30px); /* found in elements.less assets */
+            .content(30px); /* found in elements.less assets */
+            table {
+                margin: 0.5rem 0;
+                padding: 0;
+                background-color: #f4f3e9;
+                font-size: 0.9rem;
+            }
+            thead, tr:nth-child(even) {
+                background-color: @background;
+                margin: 0;
+            }
+            th, td {
+                padding: 0.25rem 0.5rem;
+            }
+            blockquote {
+                padding: 7.5px 60px 7.5px 15px;
+                margin: 7.5px 0;
+                border-left: 5px solid #e5e5e5;
+                font-size: 0.875rem;
+            }
+            pre {
+                padding: 7.5px 60px 7.5px 15px;
+                margin: 7.5px 0;
+                background-color: #f4f3e9;
+                border: 1px solid @background;
+                border-left: 5px solid @background;
+                font-size: 0.8rem;
+            }
+            ul, ol {
+                margin-left: 40px;
+            }
+            h2, h3, h4 {
+                padding-top: 15px;
+            }
+           
         }
     }
     .socialbar-container {
@@ -542,6 +589,7 @@ div.pagination {
     }
     div.post-wrapper {
         width: 100%;
+        padding-top: 100px;
         div.post-fragment {
             float: left;
             width: 30%;
@@ -583,16 +631,30 @@ div.pagination {
 
 /* Landscape phones and down */
 @media (max-width: 560px) {
+    body {
+        font-size: 14px;
+        line-height: 1.45;
+    }
     div.header {
+        background-color: @background;
+        height: 45px;
+        h1.logo {
+            padding: 15px 0 0 15px;
+        }
         ul.nav {
             display: none;
         }
     }
     div.mobile-nav {
         display: block;
+        top: -25px;
+        ul {
+            top: 70px;
+        }
     }
     div.post-wrapper {
         width: 100%;
+        padding: 45px0 0 0 0;
         div.post-fragment {
             clear: both;
             width: 100%;
@@ -608,11 +670,43 @@ div.pagination {
         }
     }
     div.post {
-        padding: @gutter;
+        padding: 15px;
         h2 {
-            font-size: 1.75rem;
-            line-height: 2.25rem;
+            font-size: 1.563rem;
+            line-height: 1.2;
         }
+        h3 {
+            font-size: 1.25rem;
+            line-height: 1.2;
+        }
+        h4 {
+            font-size: 1rem;
+            line-height: 1.2;
+        }
+        div.postbody .post-content {
+            ol, ul {
+                margin-left: 30px;
+            }
+            blockquote {
+                padding-right: 0px;
+                font-size: 0.8rem;
+            }            
+        }
+        tr {
+            font-size: 0.8rem;
+        }
+        pre {
+            font-size: 0.8em !important;
+        }
+        post-info p.date {
+            font-size: 0.8rem;
+        }
+    }
+    div.pagination {
+        padding-left: 25px;
+    }
+    h4.tag-header {
+        padding-left: 15px;
     }
 }
 
