@@ -852,8 +852,8 @@ div.pagination:after {
   div.post div.postbody .post-content ul {
     margin-left: 30px;
   }
-  div.post div.postbody .post-content blockquote {
-    padding-right: 0px;
+  div.post blockquote {
+    padding-right: 0px !important;
     font-size: 0.8rem;
   }
   div.post tr {
