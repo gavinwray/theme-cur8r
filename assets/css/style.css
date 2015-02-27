@@ -1,9 +1,9 @@
-/* Created by Shawn Adrian https://github.com/postachio/theme-cur8r
-   Modified by Gavin Wray 24 Feb 2015 https://github.com/gavinwray/theme-cur8r
-*/
-
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
 @import url(http://postach.io/static/themes/_assets/css/typicons.css);
+/*  Created by Shawn Adrian https://github.com/postachio/theme-cur8r
+    Modified by Gavin Wray 27 Feb 2015
+    https://github.com/gavinwray/theme-cur8r
+*/
 /*---------------------------------------------------
     LESS Elements 0.9.1
   ---------------------------------------------------
@@ -47,7 +47,7 @@ h4 {
   padding: 0;
   border: 0;
   position: relative;
-  color: #222;
+  color: #222222;
   list-style-type: none;
 }
 h1,
@@ -55,8 +55,15 @@ h2 {
   font-size: 1rem;
   line-height: 1rem;
 }
-h3 { font-size: 1.777rem; }
-h4 { font-size: 1.333rem; }
+h3 {
+  font-size: 1.777rem;
+}
+h4 {
+  font-size: 1.333rem;
+}
+h5 {
+  font-size: 1rem;
+}
 p {
   padding: 0.5rem 0 0.5rem 0;
 }
@@ -112,7 +119,7 @@ div.header h1.logo {
   display: inline-block;
 }
 div.header h1.logo a {
-  color: #464748;
+  color: #222222;
 }
 div.header h1.logo a:hover {
   color: #44a084;
@@ -128,7 +135,7 @@ div.header ul.nav li {
   font-size: 1rem;
 }
 div.header ul.nav li a {
-  color: #464748;
+  color: #222222;
   text-transform: uppercase;
 }
 div.header ul.nav li a:hover {
@@ -151,7 +158,7 @@ div.header ul.social li {
 }
 div.header ul.social li a {
   font-size: 1.5rem;
-  color: #464748;
+  color: #222222;
 }
 div.header ul.social li a:hover {
   color: #44a084;
@@ -182,14 +189,14 @@ div.mobile-nav a.toggle {
   top: 30px;
   right: 30px;
   font-size: 1.5rem;
-  color: #464748;
+  color: #222222;
 }
 div.mobile-nav a.toggle:hover {
   color: #44a084;
 }
 div.mobile-nav ul {
   display: none;
-  border-top: 1px solid #464748;
+  border-top: 1px solid #222222;
   position: absolute;
   top: 80px;
   right: 0;
@@ -201,14 +208,14 @@ div.mobile-nav ul {
   background-color: #ffffff;
 }
 div.mobile-nav ul li {
-  border-bottom: 1px solid #464748;
+  border-bottom: 1px solid #222222;
   display: block;
   text-align: left;
 }
 div.mobile-nav ul li a {
   display: block;
   padding: 15px;
-  color: #464748;
+  color: #222222;
 }
 div.mobile-nav ul li a:hover {
   background-color: #44a084;
@@ -238,7 +245,7 @@ div.right {
   padding: 125px 35px 35px 35px;
 }
 div.right h2 {
-  border-bottom: 1px solid #464748;
+  border-bottom: 1px solid #222222;
   padding-bottom: 15px;
 }
 div.right h2 .typcn {
@@ -246,14 +253,14 @@ div.right h2 .typcn {
   color: #e7e2d0;
 }
 div.right h3 {
-  border-bottom: 1px solid #464748;
+  border-bottom: 1px solid #222222;
   font-weight: 700;
   padding: 10px 0 10px 0;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 div.right p {
-  color: #464748;
+  color: #222222;
   font-size: 0.9rem;
   padding: 0;
   margin: 0;
@@ -266,7 +273,7 @@ div.right ul.right-links {
   line-height: 1.5rem;
 }
 div.right ul.right-links li a {
-  color: #464748;
+  color: #222222;
 }
 div.right ul.right-links li a:hover {
   color: #44a084;
@@ -381,7 +388,7 @@ div.post-wrapper div.post-fragment div.post-details h2 {
   font-weight: 700;
 }
 div.post-wrapper div.post-fragment div.post-details h2 a {
-  color: #464748;
+  color: #222222;
 }
 div.post-wrapper div.post-fragment div.post-details h2 a:hover {
   color: #44a084;
@@ -424,13 +431,6 @@ div.post-wrapper div.post-fragment:hover div.post-body {
   display: block;
   cursor: pointer;
 }
-div.post-wrapper div.post-fragment p.date {
-  font-size: 0.8rem;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
 div.post {
   background-color: #ffffff;
   padding: 50px 100px 50px 50px;
@@ -442,10 +442,10 @@ div.post h2 {
   line-height: 1.2;
 }
 div.post h2 a {
-  color: #464748;
+  color: #222222;
 }
 div.post h2 a:hover {
-  color: #464748;
+  color: #222222;
 }
 div.post ul.tags {
   padding: 0.5rem 0 1.5rem 0;
@@ -454,7 +454,7 @@ div.post ul.tags:first-of-type {
   margin-left: 0;
 }
 div.post div.post-body p {
-  color: #222;
+  color: #222222;
 }
 div.post div.post-body p img {
   width: 100%;
@@ -511,37 +511,17 @@ div.post div.post-body .post-content div.gist .line {
   margin: 0;
 }
 div.post div.post-body .post-content table {
-  margin: 0.5rem 0;
-  padding: 0;
-  background-color: #f4f3e9;
-  font-size: 0.9rem;
-}
-div.post div.post-body .post-content thead,
-div.post div.post-body .post-content tr:nth-child(even) {
-  background-color: #e7e2d0;
   margin: 0;
-}
-div.post div.post-body .post-content th, 
-div.post div.post-body .post-content td {
-  padding: 0.25rem 0.5rem;
+  padding: 0;
 }
 div.post div.post-body .post-content blockquote {
-  padding: 7.5px 60px 7.5px 15px;
+  padding: 7.5px 15px;
   margin: 7.5px 0;
   border-left: 5px solid #e5e5e5;
-  font-size: 0.875rem;
-}
-div.post div.post-body .post-content pre {
-  padding: 7.5px 60px 7.5px 15px;
-  margin: 7.5px 0;
-  background-color: #f4f3e9;
-  border: 1px solid #e7e2d0;
-  border-left: 5px solid #e7e2d0;
-  font-size: 0.8rem;
 }
 div.post div.post-body .post-content ul {
   padding: 7.5px 0 11.25px;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 div.post div.post-body .post-content ul li {
   padding: 0;
@@ -550,7 +530,7 @@ div.post div.post-body .post-content ul li {
 }
 div.post div.post-body .post-content ol {
   padding: 7.5px 0 11.25px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 div.post div.post-body .post-content ol li {
   padding: 0;
@@ -561,12 +541,12 @@ div.post div.post-body .post-content h1 {
   padding-bottom: 15px;
 }
 div.post div.post-body .post-content h2,
-div.post div.post-body .post-content h3,
-div.post div.post-body .post-content h4 {
+div.post div.post-body .post-content h3 {
   padding-top: 15px;
 }
 div.post div.post-body .post-content img {
   max-width: 100%;
+  height: auto;
 }
 div.post div.post-body .post-content .mejs-container {
   margin-top: 7.5px;
@@ -609,6 +589,44 @@ div.post div.post-body .post-content .post-pdf .pdf-fullscreen:hover {
 div.post div.post-body .post-content .post-pdf object {
   display: block;
   min-height: 400px;
+}
+div.post div.post-body .post-content table {
+  margin: 0.5rem 0;
+  padding: 0;
+  background-color: #f4f3e9;
+  font-size: 0.9rem;
+}
+div.post div.post-body .post-content thead,
+div.post div.post-body .post-content tr:nth-child(even) {
+  background-color: #e7e2d0;
+  margin: 0;
+}
+div.post div.post-body .post-content th,
+div.post div.post-body .post-content td {
+  padding: 0.25rem 0.5rem;
+}
+div.post div.post-body .post-content blockquote {
+  padding: 7.5px 60px 7.5px 15px;
+  margin: 7.5px 0;
+  border-left: 5px solid #e5e5e5;
+  font-size: 0.875rem;
+}
+div.post div.post-body .post-content pre {
+  padding: 7.5px 60px 7.5px 15px;
+  margin: 7.5px 0;
+  background-color: #f4f3e9;
+  border: 1px solid #e7e2d0;
+  border-left: 5px solid #e7e2d0;
+  font-size: 0.8rem;
+}
+div.post div.post-body .post-content ul,
+div.post div.post-body .post-content ol {
+  margin-left: 40px;
+}
+div.post div.post-body .post-content h2,
+div.post div.post-body .post-content h3,
+div.post div.post-body .post-content h4 {
+  padding-top: 15px;
 }
 div.post .socialbar-container {
   padding: 0;
@@ -684,7 +702,7 @@ div.pagination {
   padding: 30px 35px 30px 35px;
 }
 div.pagination a {
-  color: #464748;
+  color: #222222;
   font-size: 1rem;
 }
 div.pagination a.post-prev {
@@ -704,6 +722,7 @@ div.pagination:after {
   clear: both;
   height: 0;
 }
+/* Large desktop */
 /* Large desktop */
 @media (max-width: 1229px) {
   div.post-wrapper div.post-fragment {
@@ -776,8 +795,12 @@ div.pagination:after {
 }
 /* Landscape phones and down */
 @media (max-width: 560px) {
+  body {
+    font-size: 14px;
+    line-height: 1.45;
+  }
   div.header {
-    background-color: #E7E2D0;
+    background-color: #e7e2d0;
     height: 45px;
   }
   div.header h1.logo {
@@ -795,7 +818,7 @@ div.pagination:after {
   }
   div.post-wrapper {
     width: 100%;
-    padding: 45px 0 0 0;
+    padding: 45px0 0 0 0;
   }
   div.post-wrapper div.post-fragment {
     clear: both;
@@ -813,10 +836,6 @@ div.pagination:after {
   div.post {
     padding: 15px;
   }
-  body {
-    font-size: 14px;
-    line-height: 1.45;
-  }
   div.post h2 {
     font-size: 1.563rem;
     line-height: 1.2;
@@ -829,11 +848,11 @@ div.pagination:after {
     font-size: 1rem;
     line-height: 1.2;
   }
-  div.post div.post-body .post-content ol,
-  div.post div.post-body .post-content ul {
+  div.post div.postbody .post-content ol,
+  div.post div.postbody .post-content ul {
     margin-left: 30px;
   }
-  div.post div.post-body .post-content blockquote {
+  div.post div.postbody .post-content blockquote {
     padding-right: 0px;
     font-size: 0.8rem;
   }
@@ -843,7 +862,7 @@ div.pagination:after {
   div.post pre {
     font-size: 0.8em !important;
   }
-  div.post .post-info p.date {
+  div.post post-info p.date {
     font-size: 0.8rem;
   }
   div.pagination {
