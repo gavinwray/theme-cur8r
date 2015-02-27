@@ -818,7 +818,7 @@ div.pagination:after {
   }
   div.post-wrapper {
     width: 100%;
-    padding: 45px0 0 0 0;
+    padding: 45px 0 0 0;
   }
   div.post-wrapper div.post-fragment {
     clear: both;
