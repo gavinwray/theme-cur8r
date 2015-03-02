@@ -42,7 +42,8 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
   padding: 0;
   border: 0;
@@ -852,7 +853,8 @@ div.pagination:after {
     font-size: 1.25rem;
     line-height: 1.2;
   }
-  div.post h4 {
+  div.post h4,
+  div.post h5 {
     font-size: 1rem;
     line-height: 1.2;
   }
