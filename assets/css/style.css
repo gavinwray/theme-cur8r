@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic);
 @import url(http://postach.io/static/themes/_assets/css/typicons.css);
 /*  Created by Shawn Adrian https://github.com/postachio/theme-cur8r
-    Modified by Gavin Wray 27 Feb 2015
+    Modified by Gavin Wray 2 Mar 2015
     https://github.com/gavinwray/theme-cur8r
 */
 /*---------------------------------------------------
@@ -397,9 +397,17 @@ div.post-wrapper div.post-fragment ul.tags {
   position: absolute;
   bottom: 20px;
   left: 20px;
+  float: left;
 }
 div.post-wrapper div.post-fragment ul.tags:first-of-type {
   margin-left: 0;
+}
+div.post-wrapper div.post-fragment span.date {
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.75rem;
 }
 div.post-wrapper div.post-fragment div.post-body {
   display: none;
